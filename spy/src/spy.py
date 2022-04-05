@@ -25,9 +25,12 @@ if __name__ == '__main__':
     rospy.Subscriber('/aruco', Int8, callback2)
     rospy.init_node('spy', anonymous=True)
     rate = rospy.Rate(10) # 10hz
+    path=os.path.dirname(os.path.realpath(__file__))
+    img=cv2.imread(path+'/images/image1.png')
     while not rospy.is_shutdown():
         path=os.path.dirname(os.path.realpath(__file__))
         location=coordi()
+        # print(aruco)
         if x<-4.5 and x>-5.5 and y<-8.1 and y>-9.1 and aruco==0:
             location.image=cv2.imread(path+'/images/image1.png').reshape(-1)
             location.orientation=[0,0,0.7,0.7]

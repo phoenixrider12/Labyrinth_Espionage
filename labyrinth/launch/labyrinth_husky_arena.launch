@@ -10,7 +10,7 @@
 
   <!-- Launch Sample World -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find labyrinth)/worlds/labyrinth_Practice_Arena.world"/>
+    <arg name="world_name" value="$(find labyrinth)/worlds/labyrinth_PS1_arena.world"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
     <arg name="gui" value="$(arg gui)"/>
@@ -36,8 +36,7 @@
   <!-- Robot state publisher -->
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
 
-  <!-- Rviz -->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find labyrinth)/viz/rviz.rviz" output="screen"/>
-    <param name="frame_id" value="map"/>
+
 
 </launch>
