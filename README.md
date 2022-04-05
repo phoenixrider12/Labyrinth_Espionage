@@ -2,7 +2,7 @@
 
 The GitHub Repository of Team Espionage for Labyrinth'22, a ROS-based event conducted by IIT Varanasi, where we bagged first position
 
-## Run the simulation
+<!-- ## Run the simulation
 
 - Clone this repository in the `src` folder of your catkin workspace.
 - Inside your workspace folder, run `catkin build`.
@@ -21,7 +21,7 @@ The GitHub Repository of Team Espionage for Labyrinth'22, a ROS-based event cond
   - Open a new terminal and run the following command:
   ```
   rosrun labyrinth_navigation moveyourbody.py
-  ```
+  ``` -->
 
 ### Team
 <table>
