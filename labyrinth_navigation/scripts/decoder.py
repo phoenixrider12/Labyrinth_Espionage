@@ -167,7 +167,7 @@ def decode(img):
 #     img=cv2.imread('image/final.png')
 #     find_color_range(img)
 
-img=cv2.imread('/home/sandeepan/catkin_ws/src/Labyrinth-Practice-ROS-Package/spy/src/images/image1.png')
+img=cv2.imread('/home/aryaman/Labyrinth_Espionage/spy/src/images/image1.png')
 ans=decode(img)
 print(ans)
 # img=cv2.imread('image/q2.png')
